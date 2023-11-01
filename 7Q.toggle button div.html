@@ -1,0 +1,33 @@
+<html>
+    <head>
+     <style>
+        #d1{
+            border: 1px solid;
+            padding: 30px;
+            width: 70px;
+            text-align: center;
+            font-size: 20px;
+            
+        }
+     </style>
+    </head>
+    <body>
+        <div id="d1">  </div> <br>
+        <button  onclick="abc()">True/False</button>
+        <script>
+             var x = document.getElementById("d1")
+             x.innerHTML="Im nothing"
+             x.style.fontSize = "18px"
+             x.style.fontWeight = "bold"
+            function abc(){
+               if(x.innerHTML==="true"){
+                    x.innerHTML="false"
+               }
+               else{
+                x.innerHTML="true"
+               }
+               
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <button id="d1" onclick="abc()">On</button>
+        <script>
+            var btn = document.getElementById("d1")
+            btn.style.padding = "30px"
+            btn.style.fontSize = "30px"
+            btn.style.marginLeft="50px"
+            btn.style.marginTop="50px"
+            function abc(){
+                if(btn.innerHTML==="On"){
+                    btn.innerHTML="Off"
+                }
+                else{
+                    btn.innerHTML="On"
+                }
+            }
+        </script>
+    </body>
+
+</html>

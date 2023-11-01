@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <style>
+            body{
+                text-align: center;
+            }
+            #d1{
+                color: red;
+            }
+            #d2{
+                background-color: orange;
+                font-size: 20px;
+            }
+            #d3{
+                color: red;
+                font-size: 20px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1 id="d1">Toggle button to show true/false</h1>
+        <button id="d2" onclick="abc()">Toggle</button> &nbsp
+        <span id="d3">false</span>
+        <script>
+            function abc(){
+                var x = document.getElementById("d3")
+                if(x.innerHTML==="false"){
+                    x.innerHTML="true"
+                    x.style.color="red"
+                }
+                else{
+                    x.innerHTML="false"
+                }
+            }
+        </script>
+    </body>
+</html>

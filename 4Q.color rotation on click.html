@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <style>
+            #d1{
+                border: 1px solid;
+                padding: 30px;
+                width: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="d1" onclick="abc()"></div>
+        <script>
+            var ar = ['red','blue','pink','black','orange']
+           var index=0
+            function abc(){
+               var x = document.getElementById('d1')
+               x.style.backgroundColor= ar[index]
+               index= (index+1)% ar.length
+               
+            }
+        </script>
+    </body>
+</html>

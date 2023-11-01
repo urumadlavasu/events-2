@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <style>
+            body{
+                text-align:center;
+            }
+            #dvid{
+                color: red;
+                
+            }
+            #btnid{
+            border-color: red;
+            }
+        
+
+
+
+        </style>
+    </head>
+    <body>
+        <div>
+        <h1 id="dvid">Change button background color on click</h1>
+        <button id="btnid" onclick="abc()"> white </button> 
+    </div>
+
+    <script>
+        var x = document.getElementById("btnid")
+        function abc(){
+            // x.classList.toggle('active');
+
+        if(x.innerHTML==='white'){
+            x.innerHTML='green'
+            x.style.backgroundColor="green"
+            x.style.color="white"
+        }
+        else{
+            x.innerHTML = 'white'
+            x.style.backgroundColor=""
+            x.style.color="black"
+
+
+        }
+        }
+    </script>
+    </body>
+</html>

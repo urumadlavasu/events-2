@@ -1,0 +1,69 @@
+<html>
+    <head></head>
+    <body>
+        <div style="text-align: center;">
+            <h1 style="color: red;">Add students</h1>
+            <input type="text" value="" name="" id="inptid"> &nbsp
+            <button  onclick="abc()" style="background-color: orange;">Add Student</button>
+            
+        </div>
+        <script>
+            // var x = document.getElementById("inptid");
+          
+            // function abc(){
+            // var inputStudents = x.value;
+            //     var students=[];
+            //     students.push(inputStudents)
+            //     console.log(students) 
+
+            //     var nul = document.createElement("ul")
+               
+               
+            //    students.forEach(function(para){
+            //     var nli = document.createElement("li")
+            //     nli.innerHTML = para
+            //     nul.appendChild(nli)
+            //    })
+            //    document.body.appendChild(nul)
+            // }
+        
+        //  var x = document.getElementById("inptid")
+        
+        //  function abc(){
+        //         var students = [];
+        //         students.push(x.value);
+        //         console.log(students)
+
+        //         var nul = document.createElement("ul")
+        //         document.body.appendChild(nul)
+
+
+        //     students.forEach(function(para){
+               
+        //         var nli = document.createElement("li")
+        //         nli.innerHTML=para
+        //         nul.appendChild(nli)
+        //     })
+          
+        //  }
+        
+        var x = document.getElementById("inptid")
+        function abc(){
+         var students = []
+         students.push(x.value)
+         console.log(students)
+
+         var nul = document.createElement("ul")
+         document.body.appendChild(nul)
+
+         students.forEach(function (pr){
+                 var nli = document.createElement("li")
+                 nli.innerHTML=pr
+                 nul.appendChild(nli)
+         })
+
+        }
+        
+        </script>
+    </body>
+</html>

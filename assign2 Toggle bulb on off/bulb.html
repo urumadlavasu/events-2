@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <style>
+            body{
+                text-align: center;
+            }
+            .on{
+                
+                display: none;
+                margin: auto;
+            }
+            .off11{
+                display: none;
+            }
+            .on11{
+                display: block;
+                
+            }
+           
+        </style>
+
+    </head>
+    <body>
+        <h1 style="color: red;">Show bulb on/off image using toggle button</h1>
+        <img id="offimage" width="300px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRZ2FidCbWdazrJezZAUdzS_vTJyf-Jmu0Y2eVInuZ56E8NfuM4OpPhdcEWkzUAUoacr8&usqp=CAU" alt="">
+         <img id="onimage" class="on"  width="300px" src="https://media.istockphoto.com/id/1212402889/vector/shining-yellow-smiling-light-bulb.jpg?s=612x612&w=0&k=20&c=K4Y_lMrDFDlgflpkA6-WfCWHNMX_pKfsFWD7nR--0bY="  alt="">  
+        <br>
+        <button id="btn" onclick="abc()">OFF</button>
+        <script>
+            var offimage = document.getElementById("offimage")
+            var onimage = document.getElementById("onimage")
+            var btn= document.getElementById("btn")
+
+            btn.style.backgroundColor="orange"
+            function abc(){
+                if(btn.innerHTML==="OFF"){
+                    btn.innerHTML="ON"
+                    
+                }
+                else{
+                    btn.innerHTML="OFF"
+                  
+                }
+                offimage.classList.toggle('off11')
+                onimage.classList.toggle('on11')
+            }
+        </script>
+    </body>
+
+</html>

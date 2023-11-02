@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <style>
+            body{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="color: red;">Show images using URL</h1>
+        <h style="display: inline; margin-left: 30px; color: red;">Enter image URL:</h4>
+        <input type="text" id="url"  value=""> <br> <br> 
+        <button onclick="dispalyImg()">Add Image</button> <br> <br> <br>
+        <img id="dispimg" src="" alt="" >
+
+        <script>
+            
+            function dispalyImg(){
+                var inputurl = document.getElementById("url").value
+                var img = document.getElementById("dispimg")
+                img.src = inputurl;
+            }
+        </script>
+    </body>
+</html>
